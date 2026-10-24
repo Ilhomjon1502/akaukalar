@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aka-uka — Omonjon va Oqilbek | Codial akademiyasi</title>
+  <meta name="description" content="Marg'ilonlik ikki aka-uka — Omonjon va Oqilbek Codial akademiyasida kompyuter savodxonligini boshlashdi. Biri kelajakning oshpazi, biri kelajakning dasturchisi.">
+  <meta property="og:title" content="Omonjon va Oqilbek — ikki aka-uka, ikki katta orzu">
+  <meta property="og:description" content="Codial akademiyasida kompyuter savodxonligini boshlagan marg'ilonlik ikki aka-uka. Oshpaz va dasturchi bo'lish yo'lidagi birinchi qadam.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.jpg">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo">Aka<span>-</span>uka<i>.</i></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#tanishuv">Tanishuv</a>
+        <a href="#orzu">Orzular</a>
+        <a href="#lab">Laboratoriya</a>
+        <a href="#yol">Yo'l xaritasi</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Mavzuni almashtirish">🌙</button>
+        <a href="#aloqa" class="btn btn-primary btn-nav">Bog'lanish</a>
+        <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge reveal"><span class="dot"></span> Codial akademiyasi · Marg'ilon</span>
+          <h1 class="reveal d1">Ikki aka-uka,<br><span class="grad">ikki katta orzu</span>, bitta oila</h1>
+          <p class="reveal d2">Omonjon va Oqilbek kompyuter savodxonligi bilan o'z kelajagiga <b>birinchi qadamni</b> qo'ydi. Biri dunyo oshxonasini zabt etmoqchi, ikkinchisi dasturlar va platformalar quradi.</p>
+          <div class="typed-line reveal d3">
+            <span class="tl-now">Bugun: kompyuter</span>
+            <span class="arrow">→</span>
+            <span class="tl-next">Ertaga: <b id="typed"></b><i class="caret"></i></span>
+          </div>
+          <div class="hero-actions reveal d4">
+            <a href="#orzu" class="btn btn-primary">Ular bilan tanishing</a>
+            <button class="btn btn-outline" id="celebrate">🎉 Tabriklash</button>
+          </div>
+          <div class="chips reveal d4">
+            <span class="chip om">👨‍🍳 Omonjon · 17 yosh</span>
+            <span class="chip oq">👨‍💻 Oqilbek · 14 yosh</span>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal d2">
+          <div class="photo-frame">
+            <img src="assets/hero.jpg" alt="Kelajak sari yo'lda — aka-ukalardan biri" width="800" height="1000">
+            <div class="photo-cap">🚗 Kelajak sari yo'lda</div>
+          </div>
+          <div class="float f1"><span class="fi bg-blue">🎓</span><div><small>Akademiya</small><b>Codial</b></div></div>
+          <div class="float f2"><span class="fi bg-orange">🍳</span><div><small>Omonjon</small><b>Oshpaz</b></div></div>
+          <div class="float f3"><span class="fi bg-violet">💻</span><div><small>Oqilbek</small><b>Dasturchi</b></div></div>
+          <div class="ring r1"></div><div class="ring r2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>💻 Kompyuter savodxonligi</span><span>🍳 Oshpazlik</span><span>🚀 Startap</span><span>🍚 O'zbek oshi</span><span>⌨️ Dasturlash</span><span>⭐ Katta orzu</span><span>🌍 Dunyo sahnasi</span><span>🏙️ Marg'ilon</span>
+        <span>💻 Kompyuter savodxonligi</span><span>🍳 Oshpazlik</span><span>🚀 Startap</span><span>🍚 O'zbek oshi</span><span>⌨️ Dasturlash</span><span>⭐ Katta orzu</span><span>🌍 Dunyo sahnasi</span><span>🏙️ Marg'ilon</span>
+      </div>
+    </div>
+
+    <!-- TANISHUV -->
+    <section id="tanishuv" class="intro">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Tanishuv</span>
+          <h2>Marg'ilondan <span class="grad">katta dunyoga</span></h2>
+          <p>Har bir katta yo'l kichik qadamdan boshlanadi. Bu ikki aka-uka uchun u qadam — Codial akademiyasidagi birinchi dars bo'ldi.</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><b data-count="2">0</b><span>aka-uka</span></div>
+          <div class="stat reveal d1"><b data-count="31">0</b><span>yosh — ikkalasi birgalikda</span></div>
+          <div class="stat reveal d2"><b data-count="1">0</b><span>akademiya, bitta maqsad</span></div>
+          <div class="stat reveal d3"><b data-count="100" data-suffix="%">0</b><span>ishtiyoq va intilish</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORZULAR / PROFILLAR -->
+    <section id="orzu" class="dreams">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Orzular</span>
+          <h2>Ikki yo'l, <span class="grad">ikki qahramon</span></h2>
+          <p>Yo'llari boshqa-boshqa, lekin boshlanishi bitta: bilim, mehnat va katta orzu.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card om reveal tilt">
+            <div class="card-top">
+              <div class="avatar">
+                <span class="av-emoji">👨‍🍳</span>
+                <div class="orbit"><span style="--i:0">🍚</span><span style="--i:1">🥟</span><span style="--i:2">🔥</span></div>
+              </div>
+              <span class="role-tag">Kelajak oshpazi</span>
+            </div>
+            <h3>Omonjon</h3>
+            <ul class="facts">
+              <li><span>🎂</span><div><small>Yoshi</small><b>17 yosh</b></div></li>
+              <li><span>🏫</span><div><small>O'qiydi</small><b>Marg'ilon sanoat texnikumi</b></div></li>
+              <li><span>🎯</span><div><small>Orzusi</small><b>Dunyoga tanilgan birinchi o'zbek oshpazi</b></div></li>
+            </ul>
+            <div class="tags"><span>Oshpazlik</span><span>O'zbek taomlari</span><span>Ijodkorlik</span><span>Sabr-toqat</span></div>
+            <a class="btn btn-solid" href="tel:+998942957592">📞 +998 94 295 75 92</a>
+          </article>
+
+          <article class="card oq reveal d1 tilt">
+            <div class="card-top">
+              <div class="avatar">
+                <span class="av-emoji">👨‍💻</span>
+                <div class="orbit"><span style="--i:0">🚀</span><span style="--i:1">⚙️</span><span style="--i:2">💡</span></div>
+              </div>
+              <span class="role-tag">Kelajak dasturchisi</span>
+            </div>
+            <h3>Oqilbek</h3>
+            <ul class="facts">
+              <li><span>🎂</span><div><small>Yoshi</small><b>14 yosh</b></div></li>
+              <li><span>🏫</span><div><small>O'qiydi</small><b>25-maktab, 9-sinf</b></div></li>
+              <li><span>🎯</span><div><small>Orzusi</small><b>Katta dasturiy ta'minot va platformalar qurish, o'z startapini biznesga aylantirish</b></div></li>
+            </ul>
+            <div class="tags"><span>IT</span><span>Dasturlash</span><span>Startap</span><span>Platformalar</span></div>
+            <a class="btn btn-solid" href="tel:+998916741550">📞 +998 91 674 15 50</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LABORATORIYA -->
+    <section id="lab" class="lab">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Orzu laboratoriyasi</span>
+          <h2>Kelajakka <span class="grad">bir qarab oling</span></h2>
+          <p>Tanlang va ular tasavvur qilgan ertangi kunni ko'ring.</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" data-tab="om" role="tab">👨‍🍳 Omonjon</button>
+          <button class="tab" data-tab="oq" role="tab">👨‍💻 Oqilbek</button>
+        </div>
+
+        <div class="panels reveal d1">
+          <!-- Omonjon -->
+          <div class="panel active" id="panel-om">
+            <div class="menu-card">
+              <div class="menu-head">
+                <div class="bowl">
+                  <div class="steam"><i></i><i></i><i></i></div>
+                  <span>🍲</span>
+                </div>
+                <div>
+                  <small>Omonjonning kelajak menyusi</small>
+                  <h4>«Marg'ilon» restorani</h4>
+                  <div class="stars" aria-label="Orzu: uchta Michelin yulduzi">⭐⭐⭐ <em>orzu qilingan reyting</em></div>
+                </div>
+              </div>
+              <ul class="menu">
+                <li><span class="dish">🍚</span><div><b>Osh</b><small>Bayramlar va to'ylar shohi</small></div><span class="dots"></span><em>∞</em></li>
+                <li><span class="dish">🥟</span><div><b>Somsa va manti</b><small>Issiq, xushbo'y, qarsildoq</small></div><span class="dots"></span><em>∞</em></li>
+                <li><span class="dish">🍜</span><div><b>Lag'mon</b><small>Qo'lda cho'zilgan xamir</small></div><span class="dots"></span><em>∞</em></li>
+                <li><span class="dish">🍢</span><div><b>Shashlik</b><small>Cho'g'da pishgan mazali</small></div><span class="dots"></span><em>∞</em></li>
+              </ul>
+              <p class="menu-note">«O'zbek taomining ta'mi butun dunyo dasturxonida bo'lsin!»</p>
+            </div>
+            <div class="side-info">
+              <h4>Nega kompyuter oshpazga kerak?</h4>
+              <ul class="check">
+                <li>Retseptlarni tartibli yozish va saqlash</li>
+                <li>O'z oshpazlik sahifasi yoki blogini yuritish</li>
+                <li>Taomlarni suratga olib, dunyoga ko'rsatish</li>
+                <li>Restoran hisob-kitobi va rejalarini yuritish</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Oqilbek -->
+          <div class="panel" id="panel-oq">
+            <div class="terminal">
+              <div class="term-bar"><i></i><i></i><i></i><span>oqilbek.js</span></div>
+              <pre><code id="code"></code><i class="caret"></i></pre>
+            </div>
+            <div class="side-info">
+              <h4>Startap yo'li</h4>
+              <div class="stages" id="stages">
+                <div class="stage"><span>💡</span><b>G'oya</b><div class="bar"><i></i></div></div>
+                <div class="stage"><span>🧪</span><b>Birinchi dastur</b><div class="bar"><i></i></div></div>
+                <div class="stage"><span>🏗️</span><b>Platforma</b><div class="bar"><i></i></div></div>
+                <div class="stage"><span>🏢</span><b>Katta biznes</b><div class="bar"><i></i></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YO'L XARITASI -->
+    <section id="yol" class="roadmap">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Yo'l xaritasi</span>
+          <h2>Orzudan <span class="grad">haqiqatga</span></h2>
+          <p>Birinchi bosqich allaqachon boshlandi. Qolganlari — kelajak maqsadlari.</p>
+        </div>
+
+        <div class="lanes">
+          <div class="lane om reveal">
+            <h3>👨‍🍳 Omonjon</h3>
+            <ol>
+              <li class="now"><b>Kompyuter savodxonligi</b><span>Codial akademiyasida boshlandi</span><em>Hozir</em></li>
+              <li><b>Oshpazlik mahorati</b><span>Texnikumda bilim va amaliyot</span><em>Maqsad</em></li>
+              <li><b>Tajriba va o'z uslubi</b><span>Katta oshxonalarda ishlash</span><em>Maqsad</em></li>
+              <li><b>O'z restorani</b><span>O'zbek taomining yangi nafasi</span><em>Maqsad</em></li>
+              <li><b>Dunyo sahnasi</b><span>Dunyoga tanilgan o'zbek oshpazi</span><em>Orzu</em></li>
+            </ol>
+          </div>
+          <div class="lane oq reveal d1">
+            <h3>👨‍💻 Oqilbek</h3>
+            <ol>
+              <li class="now"><b>Kompyuter savodxonligi</b><span>Codial akademiyasida boshlandi</span><em>Hozir</em></li>
+              <li><b>Dasturlash asoslari</b><span>Mantiq va birinchi kodlar</span><em>Maqsad</em></li>
+              <li><b>Birinchi loyihalar</b><span>Sayt, ilova va botlar</span><em>Maqsad</em></li>
+              <li><b>O'z startapi</b><span>G'oyadan mahsulotgacha</span><em>Maqsad</em></li>
+              <li><b>Katta platformalar</b><span>Biznes va dunyo bozori</span><em>Orzu</em></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTA-ONALAR -->
+    <section class="parents">
+      <div class="container">
+        <div class="parents-card reveal">
+          <div class="p-blob"></div>
+          <div class="p-text">
+            <span class="eyebrow light">Ota-onalar va yaqinlar uchun</span>
+            <h2>Siz bilan faxrlanishadi, <br>siz bilan kuchli bo'lishadi 💙</h2>
+            <p>Bugun ular kompyuter oldida o'tirib, kelajakning birinchi sahifasini yozmoqda. Eng yaxshi mukofot — sizning ishonchingiz va olqishingiz.</p>
+            <div class="clap-wrap">
+              <button class="clap" id="clap" aria-label="Olqish">👏</button>
+              <div><b id="clapCount">0</b><small>ta olqish</small></div>
+              <span class="clap-hint">Bosing — qarsak chaling!</span>
+            </div>
+          </div>
+          <div class="p-photo">
+            <img src="assets/face.jpg" alt="Tabassum qilib turgan aka-ukalardan biri" width="240" height="240" loading="lazy">
+            <span class="sticker s1">🌟</span><span class="sticker s2">🎓</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALOQA -->
+    <section id="aloqa" class="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Aloqa</span>
+          <h2>Qo'llab-quvvatlang yoki <span class="grad">tabriklang</span></h2>
+          <p>Telefon raqamlari orqali bevosita bog'lanishingiz mumkin.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card om reveal">
+            <span class="c-emoji">👨‍🍳</span>
+            <div><small>Omonjon</small><b>+998 94 295 75 92</b></div>
+            <div class="c-actions">
+              <a class="btn btn-solid" href="tel:+998942957592">Qo'ng'iroq</a>
+              <button class="btn btn-ghost copy" data-copy="+998942957592">Nusxalash</button>
+            </div>
+          </div>
+          <div class="contact-card oq reveal d1">
+            <span class="c-emoji">👨‍💻</span>
+            <div><small>Oqilbek</small><b>+998 91 674 15 50</b></div>
+            <div class="c-actions">
+              <a class="btn btn-solid" href="tel:+998916741550">Qo'ng'iroq</a>
+              <button class="btn btn-ghost copy" data-copy="+998916741550">Nusxalash</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="logo">Aka<span>-</span>uka<i>.</i></div>
+        <p>Marg'ilon · Codial akademiyasi o'quvchilari</p>
+      </div>
+      <p>Mentor: <a href="https://www.ilhomjonibragimov.uz" target="_blank" rel="noopener">Ilhomjon Ibragimov</a> · © 2026</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
