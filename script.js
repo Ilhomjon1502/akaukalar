@@ -64,7 +64,7 @@
 
   /* typed words */
   var typedEl = $('#typed');
-  var words = ['dunyo oshxonasi', 'yangi platforma', 'o\'z startapi', 'katta restoran', 'millionlab foydalanuvchi'];
+  var words = ['turk restorani shefi', 'yangi platforma', 'o\'z startapi', 'katta restoran', 'millionlab foydalanuvchi'];
   (function typeLoop(w, i, del) {
     var word = words[w];
     if (reduced) { typedEl.textContent = word; return; }
