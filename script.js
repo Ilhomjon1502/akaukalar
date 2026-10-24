@@ -198,3 +198,17 @@
     });
   });
 })();
+
+/* lightbox */
+(function () {
+  var lb = document.getElementById('lightbox'), img = document.getElementById('lbImg'), cap = document.getElementById('lbCap');
+  var last = null;
+  function open(btn) {
+    last = btn; img.src = btn.dataset.full; img.alt = btn.querySelector('img').alt; cap.textContent = btn.dataset.cap || '';
+    lb.classList.add('open'); document.body.style.overflow = 'hidden'; document.getElementById('lbClose').focus();
+  }
+  function close() { lb.classList.remove('open'); document.body.style.overflow = ''; if (last) last.focus(); }
+  Array.prototype.forEach.call(document.querySelectorAll('.zoomable'), function (b) { b.addEventListener('click', function () { open(b); }); });
+  lb.addEventListener('click', function (e) { if (e.target !== img) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.classList.contains('open')) close(); });
+})();

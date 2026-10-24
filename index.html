@@ -30,6 +30,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#tanishuv">Tanishuv</a>
         <a href="#orzu">Orzular</a>
+        <a href="#lahzalar">Lahzalar</a>
         <a href="#lab">Laboratoriya</a>
         <a href="#yol">Yo'l xaritasi</a>
         <a href="#aloqa">Aloqa</a>
@@ -101,6 +102,18 @@
           <div class="stat reveal d2"><b data-count="1">0</b><span>akademiya, bitta maqsad</span></div>
           <div class="stat reveal d3"><b data-count="100" data-suffix="%">0</b><span>ishtiyoq va intilish</span></div>
         </div>
+
+        <figure class="class-shot reveal">
+          <button class="zoomable" data-full="assets/class.jpg" data-cap="Codial akademiyasida — kelajak sari birinchi qadam" aria-label="Rasmni kattalashtirish">
+            <img src="assets/class.jpg" alt="Omonjon va Oqilbek Codial akademiyasi sinfxonasida" width="1400" height="1050" loading="lazy">
+          </button>
+          <figcaption>
+            <span class="eyebrow">Codial akademiyasi</span>
+            <h3>Mana shu xonadan <span class="grad">katta yo'l</span> boshlandi</h3>
+            <p>Yonma-yon o'tirgan ikki aka-uka: biri oshxonani, biri kodni zabt etishga tayyor. Birinchi mavzu — kompyuter savodxonligi.</p>
+            <div class="mini-tags"><span>🏫 Sinfxona</span><span>💻 Kompyuter</span><span>🤝 Birgalikda</span></div>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -149,6 +162,23 @@
             <div class="tags"><span>IT</span><span>Dasturlash</span><span>Startap</span><span>Platformalar</span></div>
             <a class="btn btn-solid" href="tel:+998916741550">📞 +998 91 674 15 50</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAHZALAR -->
+    <section id="lahzalar" class="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Lahzalar</span>
+          <h2>Yosh, ishonchli va <span class="grad">oldinga intiluvchi</span></h2>
+          <p>Kelajak qahramonlaridan kadrlar. Kattalashtirish uchun rasm ustiga bosing.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="shot reveal"><button class="zoomable" data-full="assets/hero.jpg" data-cap="Kelajak sari yo'lda 🚗"><img src="assets/hero.jpg" alt="Kelajak sari yo'lda" width="800" height="1000" loading="lazy"></button><figcaption>Kelajak sari yo'lda</figcaption></figure>
+          <figure class="shot reveal d1"><button class="zoomable" data-full="assets/g2.jpg" data-cap="Katta orzu — katta qadam ✨"><img src="assets/g2.jpg" alt="Ko'zoynak taqqan yigit uy oldida" width="840" height="1050" loading="lazy"></button><figcaption>Katta orzu — katta qadam</figcaption></figure>
+          <figure class="shot reveal d2"><button class="zoomable" data-full="assets/g1.jpg" data-cap="O'z uslubini topmoqda 😎"><img src="assets/g1.jpg" alt="Do'konda oynaga qarab turgan yigit" width="840" height="1050" loading="lazy"></button><figcaption>O'z uslubini topmoqda</figcaption></figure>
+          <figure class="shot reveal d3"><button class="zoomable" data-full="assets/g3.jpg" data-cap="Ishonch bilan oldinga 💪"><img src="assets/g3.jpg" alt="Restoranda o'tirgan yigit" width="840" height="1050" loading="lazy"></button><figcaption>Ishonch bilan oldinga</figcaption></figure>
         </div>
       </div>
     </section>
@@ -318,6 +348,10 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Rasm">
+    <button class="lb-close" id="lbClose" aria-label="Yopish">✕</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  </div>
   <div class="toast" id="toast" role="status"></div>
   <script src="script.js"></script>
 </body>
